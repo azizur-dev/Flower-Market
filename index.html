@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Market</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['"Noto Serif"', 'serif'],
+                        'sans': ['"Inter"', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#E95A08',
+                        'gray-text': 'rgba(0, 0, 0, 0.5)',
+                        'nav-text': '#8987A1',
+                    },
+                    spacing: {
+                        '6xl': '72rem',
+                        '7xl': '80rem',
+                    },
+                    boxShadow: {
+                        'trust-badge': '-4px 10px 2px rgba(0, 0, 0, 0.25)',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#F5F8FF]">
+    <!-- Header part start -->
+    <header>
+        <div class="flex justify-between items-center max-w-6xl mx-auto p-5">
+            <div class="w-[70px]">
+                <img src="assets/logo.png" alt="Flower Market Logo">
+            </div>
+            <nav>
+                <ul class="flex justify-between items-center gap-4 md:gap-10 text-nav-text">
+                    <li class="hidden md:block"><a class="text-[#252432] font-bold" href="">Home</a></li>
+                    <li class="hidden md:block"><a href="">Shop</a></li>
+                    <li class="hidden md:block"><a href="">About us</a></li>
+                    <li class="flex items-center gap-2 font-medium text-black">
+                         <img src="assets/trolley.png" alt="Shopping cart">
+                         <a href="">Cart ($56)</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="flex justify-between items-center max-w-6xl mx-auto p-5 mt-8 md:mt-16 lg:mt-30 md:flex-row flex-col-reverse">
+            <div class="w-full md:w-1/2 pt-8 md:pt-20">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-[1.3] font-serif">
+                    ALWAYS <span class="text-primary">FRESH FLOWERS</span> 
+                </h1>
+                <p class="text-gray-text text-sm sm:text-base md:text-xl lg:text-2xl font-sans">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</p>
+            </div>
+            <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                <img class="w-full" src="assets/hero-flower.png" alt="Fresh flowers">
+            </div>
+        </div>
+    </header>
+    <!-- header part end -->
+    
+</body>
+</html>
